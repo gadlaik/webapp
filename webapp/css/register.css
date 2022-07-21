@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+input {
+  width: 23rem;
+  padding: 2rem 1.25rem .5rem 1.25rem;
+  border: 1px solid #666;
+  box-shadow: inset 3px 3px 3px #ddd;
+  border-radius: 3px;
+  font-size: 1.1rem;
+}
+
+label{
+  position: relative;
+  left: -8rem;
+  top: -5rem;
+  transition-duration: 300ms;
+  color: #333;
+  margin: 0;
+  padding: 0%;
+  line-height: 0;
+}
+
+input:focus {
+  border: 1px solid #666;
+  outline: none;
+}
+
+input:focus ~ label, input:valid ~ label {
+  font-size: smaller;
+  top: -5.8rem;
+  left: -8.3rem;
+}
+
+button  {
+  background-color: #c60c30;
+  border: none;
+  padding: 1rem;
+  width: 23rem;
+  border-radius: 3px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+hr {
+    width: 23rem;
+}
+
+button:hover, input:hover, a:hover {
+    box-shadow: 0px 0px 3px #666;
+}
+
+a {
+    padding: 0.75rem 9.4rem;
+    border-radius: 3px;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+select {
+  padding: .5rem;
+}
